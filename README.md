@@ -26,7 +26,7 @@ Experience the interactive UML model through our hosted documentation:
 
 ---
 
-## � System Features & Use Cases
+## 📋 System Features & Use Cases
 
 The system design covers **9 comprehensive use cases**:
 
@@ -58,6 +58,55 @@ The system design covers **9 comprehensive use cases**:
 ---
 
 ## 💻 Project Contents
+
+This comprehensive model includes **280+ detailed UML diagrams** across multiple categories:
+
+### **Behavioral Diagrams**
+*   **Use Case Diagrams:** Complete actor-system interaction modeling
+    - UC1: Create Tournament
+    - UC2: Register Player  
+    - UC3: Withdraw Player
+    - UC4: Generate Match Draw
+    - UC5: Assign Court and Match Times
+    - UC6: Assign Referee
+    - UC7: Start Match
+    - UC8: Enter Match Result
+    - UC9: View Tournament Status
+
+*   **Activity Diagrams:** Detailed workflow processes
+    - Tournament creation workflow
+    - Player registration process
+    - Match management lifecycle
+
+*   **State Machine Diagrams:** System state transitions
+    - Match state machine (Created → In Progress → Paused → Completed/Cancelled)
+    - Tournament status management
+    - Player registration states
+
+*   **Sequence Diagrams:** Inter-object communication patterns
+    - Tournament creation sequence
+    - Match result entry interactions
+    - Player-Organizer-System communications
+
+### **Structural Diagrams**  
+*   **Class Diagrams:** Complete system class hierarchy and relationships
+    - Core domain classes (Tournament, Player, Match, Court)
+    - User management classes (Organizer, Referee, Spectator)
+    - System architecture components
+
+*   **Component Diagrams:** System modularity and component interactions
+    - Tournament management module
+    - User authentication component
+    - Match scheduling system
+
+*   **Deployment Diagrams:** Physical system architecture and deployment strategy
+    - Client-server architecture
+    - Database deployment configuration
+    - System integration points
+
+### **Implementation Details**
+*   **Package Diagrams:** System organization and modular structure
+*   **Object Diagrams:** Runtime object relationships and configurations
 
 ---
 
