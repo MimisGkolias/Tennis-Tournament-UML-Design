@@ -153,5 +153,3 @@ For offline exploration or detailed analysis:
 3. **Enterprise Architect Integration**
    - EA project files included for full editing capability
    - Requires Sparx Systems Enterprise Architect license
-
----
