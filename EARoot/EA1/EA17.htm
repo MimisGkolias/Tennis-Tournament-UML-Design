@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>User</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> User </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../index.htm">Model</a> / <a href="EA19.htm">Tennis_Tournament</a> / <a href="EA17.htm">User</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/181.png" alt="Diagram"/> <a href="EA1.htm">Create_Tournament_Activity_Diagram</a></li>
+<li><img src="../../images/185.png" alt="Diagram"/> <a href="EA3.htm">Enter_Match_Result_Sequence</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA5.htm">Match</a></li>
+<li><img src="../../images/180.png" alt="Diagram"/> <a href="EA9.htm">Organizer</a></li>
+<li><img src="../../images/180.png" alt="Diagram"/> <a href="EA11.htm">Player</a></li>
+<li><img src="../../images/185.png" alt="Diagram"/> <a href="EA13.htm">Register_for_Tournament_Sequence</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA15.htm">Tournament</a></li>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA17.htm">User</a></li>
+<li><img src="../../images/6.png" alt="Actor"/> <a href="EA56.htm">Organizer</a></li>
+<li><img src="../../images/6.png" alt="Actor"/> <a href="EA58.htm">Player</a></li>
+<li><img src="../../images/6.png" alt="Actor"/> <a href="EA83.htm">User</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA20.htm">:UC8. Assign Court and Match Times</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA68.htm">UC1. Create Tournament</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA69.htm">UC10. User is logged in</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA70.htm">UC11. Notify players and users</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA71.htm">UC12. Update Player Rankings</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA72.htm">UC13. Show detailed statistics of the match</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA73.htm">UC14. View Tournament Schedule</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA74.htm">UC15. View Results and Rankings</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA75.htm">UC2. Manage Tournament Info</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA76.htm">UC3. Manage Player Applications</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA77.htm">UC4. Register as Player</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA78.htm">UC5. Register for Tournament</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA79.htm">UC6. Withdraw from Tournament</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA80.htm">UC7. Generate Match Draw</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA81.htm">UC8. Assign Court and Match Times</a></li>
+<li><img src="../../images/7.png" alt="UseCase"/> <a href="EA82.htm">UC9. Enter Match Result</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA44.htm">Collection of Tournament&#39;s Players</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA45.htm">Court</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA46.htm">Draw</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA47.htm">Match</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA49.htm">Match Schedule</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA51.htm">MatchGUI</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA53.htm">Notification</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA57.htm">Organizer</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA59.htm">Player</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA60.htm">Player Registration</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA61.htm">Ranking</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA62.htm">Round</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA63.htm">Score</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA64.htm">Statistics</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA65.htm">Tournament</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA66.htm">Tournament GUI</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA84.htm">User</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA21.htm">:Match</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA25.htm">:MatchGUI</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA34.htm">:Notification</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA29.htm">:Organizer</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA27.htm">:Player</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA24.htm">:Ranking</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA23.htm">:Score</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA22.htm">:Statistics</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA33.htm">:Tournament</a></li>
+<li><img src="../../images/25.png" alt="Object"/> <a href="EA35.htm">:Tournament GUI</a></li>
+<li><img src="../../images/101.png" alt="InteractionFragment"/> <a href="EA26.htm"></a></li>
+<li><img src="../../images/101.png" alt="InteractionFragment"/> <a href="EA28.htm"></a></li>
+<li><img src="../../images/101.png" alt="InteractionFragment"/> <a href="EA36.htm"></a></li>
+<li><img src="../../images/57.png" alt="Sequence"/> <a href="EA30.htm">:Organizer</a></li>
+<li><img src="../../images/57.png" alt="Sequence"/> <a href="EA31.htm">:Player</a></li>
+<li><img src="../../images/57.png" alt="Sequence"/> <a href="EA32.htm">:Player</a></li>
+<li><img src="../../images/116.png" alt="ActivityPartition"/> <a href="EA39.htm">ActivityPartition1</a></li>
+<li><img src="../../images/116.png" alt="ActivityPartition"/> <a href="EA40.htm">ActivityPartition2</a></li>
+<li><img src="../../images/116.png" alt="ActivityPartition"/> <a href="EA41.htm">ActivityPartition3</a></li>
+<li><img src="../../images/116.png" alt="ActivityPartition"/> <a href="EA42.htm">ActivityPartition4</a></li>
+<li><img src="../../images/56.png" alt="Decision"/> <a href="EA43.htm">Are fields valid?</a></li>
+<li><img src="../../images/104.png" alt="Action"/> <a href="EA37.htm">getTournamentDetails</a></li>
+<li><img src="../../images/57.png" alt="Sequence"/> <a href="EA48.htm">Match</a></li>
+<li><img src="../../images/57.png" alt="Sequence"/> <a href="EA50.htm">MatchGUI</a></li>
+<li><img src="../../images/136.png" alt="MessageEndpoint"/> <a href="EA52.htm">MessageEndpoint1</a></li>
+<li><img src="../../images/116.png" alt="ActivityPartition"/> <a href="EA54.htm">NotificationService: Notification</a></li>
+<li><img src="../../images/57.png" alt="Sequence"/> <a href="EA55.htm">Object1</a></li>
+<li><img src="../../images/116.png" alt="ActivityPartition"/> <a href="EA67.htm">Tournament Management System</a></li>
+<li><img src="../../images/104.png" alt="Action"/> <a href="EA38.htm">validateTournamentDetails</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA18.png" usemap="#EA18" border="0" />
+
+<MAP NAME="EA18">
+<area shape="rect" coords="828,15,1020,299" href="EA47.htm" target="_self">
+<area shape="rect" coords="816,488,1032,690" href="EA63.htm" target="_self">
+<area shape="rect" coords="780,785,1044,968" href="EA61.htm" target="_self">
+<area shape="rect" coords="1044,317,1314,519" href="EA53.htm" target="_self">
+<area shape="rect" coords="521,15,729,159" href="EA49.htm" target="_self">
+<area shape="rect" coords="98,149,308,410" href="EA84.htm" target="_self">
+<area shape="rect" coords="326,707,639,968" href="EA59.htm" target="_self">
+<area shape="rect" coords="14,756,305,939" href="EA57.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">User : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">24/4/2025 3:31:40 μμ</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">23/5/2025 3:56:27 μμ</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">jimgo</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{BF66F93D-3ED8-4305-B4EB-58A55FE72A64}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
